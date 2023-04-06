@@ -7,5 +7,3 @@ function checkSpam(str) {
 
   return false;
 }
-
-console.log(checkSpam('1xbet'));

@@ -6,4 +6,3 @@ function truncate(str, maxlength) {
   return str;
 }
 
-console.log(truncate('Бобикус', 4));
