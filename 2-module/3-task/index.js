@@ -1,5 +1,31 @@
-let calculator = {
-  // ваш код
+// let calculator  = {
+//   read() {
+//     this.a = +prompt('Введите значение a', '0');
+//     this.b = +prompt('Введите значение b', '0');
+//   },
+
+//   sum() {
+//     return this.a + this.b;
+//   },
+
+//   mul() {
+//     return this.a * this.b;
+//   },
+// };
+
+let calculator  = {
+  read(a, b) {
+    this.a = +a;
+    this.b = +b;
+  },
+
+  sum() {
+    return this.a + this.b;
+  },
+
+  mul() {
+    return this.a * this.b;
+  },
 };
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ

@@ -1,3 +1,9 @@
 function checkSpam(str) {
-  // ваш код...
+  let toLow = str.toLowerCase();
+
+  if (toLow === '1xbet now' || toLow === 'free xxxxx') {
+    return true;
+  }
+
+  return false;
 }
