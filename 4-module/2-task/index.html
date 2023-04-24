@@ -12,6 +12,7 @@
       padding: 3px 5px;
     }
   </style>
+  <title>task2</title>
 </head>
 
 <body>
@@ -53,9 +54,18 @@
     </tr>
   </table>
 
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
   <script>
     let table = document.querySelector('table');
+
+    function makeDiagonalRed(table) {
+      let table1 = document.body.firstElementChild;
+
+      for (let i = 0; i < table1.rows.length; i++) {
+        let row = table1.rows[i];
+        row.cells[i].style.backgroundColor = 'red';
+      }
+    }
 
     makeDiagonalRed(table);
   </script>
