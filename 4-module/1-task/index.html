@@ -4,7 +4,7 @@
     <title>Занятие 4: Список друзей</title>
   </head>
 
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
   <body>
     <script>
       let friends = [
@@ -21,6 +21,18 @@
           lastName: 'Michael'
         }
       ];
+
+      let makeFriendsList = (friends) => {
+        let ul = document.createElement('ul');
+
+        for (let key of friends) {
+          let li = document.createElement('li');
+          li.innerHTML = `${key.firstName} ${key.lastName}`;
+          ul.appendChild(li);
+        }
+
+        return ul;
+      };
 
       document.body.appendChild(makeFriendsList(friends));
     </script>
